@@ -37,9 +37,9 @@ if len(sys.argv) > 1:
                 else:
                     print(item, " : NOT LEAKED!")
     else:
-        password = sys.argv[1]
-        answer = check_pwd(password)
+        pswd = sys.argv[1]
+        answer = check_pwd(pswd)
         if answer:
-            print(password, " : LEAKED!")
+            print(pswd, " : LEAKED!")
         else:
-            print(password, " : NOT LEAKED!")
+            print(pswd, " : NOT LEAKED!")
