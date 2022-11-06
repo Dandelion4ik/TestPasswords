@@ -27,6 +27,8 @@ def check_pwd(password=""):
 
 if len(sys.argv) > 1:
     if sys.argv[1] == '-f':
+        if len(sys.argv) == 2:
+            sys.exit("Need file path")
         file_name = sys.argv[2]
         with open(file_name, mode="r") as file:
             for item in file:
